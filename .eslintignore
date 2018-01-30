@@ -1,0 +1,13 @@
+/.tmp/
+/.sass-cache/
+/bower_components/
+/node_modules/
+/.idea/
+/release/
+/test/
+/preprod/
+/prod/
+/app/scripts/cozen-angular-generator-test.js
+/app/scripts/cozen-angular-generator-test.js.map
+/app/scripts/cozen-angular-generator-test.min.js
+/app/scripts/cozen-angular-generator-test.min.js.map

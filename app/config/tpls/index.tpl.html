@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html ng-app="cozenAngularGeneratorTest"
+      ng-strict-di="true"
+      lang="fr">
+    <head>
+        <base>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=9; IE=8; IE=7; IE=EDGE"/>
+        <meta name="description"
+              content="">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1">
+        <link rel="manifest"
+              href="manifest.json">
+        <meta name="theme-color"
+              content="#FFFFFF"/>
+        <link rel="canonical"
+              href="<!-- @echo configJson.app.canonicalUrl -->">
+
+        <!-- build:css(.) styles/vendor.css-->
+        <!-- bower:css-->
+        <link rel="stylesheet" href="../../bower_components/reset-css/reset.css" />
+        <link rel="stylesheet" href="../../bower_components/animate.css/animate.css" />
+        <!-- endbower-->
+        <!-- endbuild-->
+
+        <!-- @if target="dev" -->
+        <link rel="stylesheet"
+              href="styles/css/init-loader.min.css">
+        <link rel="stylesheet"
+              href="styles/css/cozen-angular-generator-test.min.css">
+        <!-- @endif -->
+
+        <!-- @if target="test" -->
+        <link rel="stylesheet"
+              href="styles/css/init-loader.min.css">
+        <link rel="stylesheet"
+              href="styles/cozen-angular-generator-test.min.css">
+        <!-- @endif -->
+
+        <!-- @if target="preprod" -->
+        <link rel="stylesheet"
+              href="styles/css/init-loader.min.css">
+        <link rel="stylesheet"
+              href="styles/cozen-angular-generator-test.min.css">
+        <!-- @endif -->
+
+        <!-- @if target="prod" -->
+        <link rel="stylesheet"
+              href="styles/css/init-loader.min.css">
+        <link rel="stylesheet"
+              href="styles/cozen-angular-generator-test.min.css">
+        <!-- @endif -->
+    </head>
+    <body class="no-overflow">
+
+        <div class="altran-container margin-l-top">
+            <h1>Hi Captain !</h1>
+            <p>Everything seems fine to me.</p>
+            <pre>
+                If you can read this message, your project is alive !
+                <br>
+                It means that your are not dead. Yet.
+            </pre>
+        </div>
+
+        <!-- Main view -->
+        <ui-view></ui-view>
+
+        <!-- build:js(.) scripts/vendor.js-->
+        <!-- bower:js-->
+        <script src="../../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../../bower_components/angular/angular.js"></script>
+        <script src="../../bower_components/angular-aria/angular-aria.js"></script>
+        <script src="../../bower_components/angular-animate/angular-animate.js"></script>
+        <script src="../../bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="../../bower_components/angular-messages/angular-messages.js"></script>
+        <script src="../../bower_components/angular-resource/angular-resource.js"></script>
+        <script src="../../bower_components/angular-route/angular-route.js"></script>
+        <script src="../../bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="../../bower_components/angular-touch/angular-touch.js"></script>
+        <script src="../../bower_components/moment/moment.js"></script>
+        <script src="../../bower_components/angular-translate/angular-translate.js"></script>
+        <script src="../../bower_components/angular-uuid-service/angular-uuid-service.js"></script>
+        <script src="../../bower_components/angular-logex/dist/log-ex-unobtrusive.js"></script>
+        <script src="../../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="../../bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+        <script src="../../bower_components/angular-translate-loader-url/angular-translate-loader-url.js"></script>
+        <script src="../../bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+        <script src="../../bower_components/chance/chance.js"></script>
+        <script src="../../bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+        <script src="../../bower_components/lodash/lodash.js"></script>
+        <script src="../../bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+        <!-- endbower-->
+        <!-- endbuild-->
+
+        <!-- @if target="dev" -->
+        <script src="scripts/cozen-angular-generator-test.min.js"></script>
+        <!-- @endif -->
+
+        <!-- @if target="test" -->
+        <script src="scripts/cozen-angular-generator-test.min.js"></script>
+        <!-- @endif -->
+
+        <!-- @if target="preprod" -->
+        <script src="scripts/cozen-angular-generator-test.min.js"></script>
+        <!-- @endif -->
+
+        <!-- @if target="prod" -->
+        <script src="scripts/cozen-angular-generator-test.min.js"></script>
+        <!-- @endif -->
+
+        <!-- No script message -->
+        <noscript>
+            <span>This app require Javascript to be enabled.</span>
+            <span>Make sure to turn it on.</span>
+        </noscript>
+    </body>
+</html>
