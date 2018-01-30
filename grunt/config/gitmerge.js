@@ -7,17 +7,15 @@
  * Time: 22:49
  * Version: 0.0.0
  */
-/* eslint key-spacing:"off" */
+/* eslint valid-jsdoc:"off" */
 module.exports = {
-	server : [
-		'copy:styles'
-	],
-	test   : [
-		'copy:styles'
-	],
-	release: [
-		'copy:release',
-		'copy:components',
-		'imagemin:release'
-	]
+	develop: {
+		options: {
+			verbose : true,
+			branch  : 'develop',
+			message : 'Release <%= newVersion %>',
+			noCommit: false,
+			strategy: 'recursive'
+		}
+	}
 };

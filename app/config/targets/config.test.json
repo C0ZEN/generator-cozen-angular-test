@@ -20,14 +20,14 @@
         }
     },
     "title": {
-        "defaultTitle": "Cozen Angular Generator Test",
+        "defaultTitle": "Generator Cozen Angular Test",
         "separator": " - "
     },
     "app": {
         "version": "0.0.0",
-        "name": "cozen-angular-generator-test",
+        "name": "generator-cozen-angular-test",
         "target": "dev",
-        "canonicalUrl": "http://toto.com"
+        "canonicalUrl": "http://exemple.com/"
     },
     "debug": {
         "compile": true,

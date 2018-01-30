@@ -1,19 +1,19 @@
 /**
- * Generated header by Geoffrey Testelin for cozen-angular-generator-test project
+ * Generated header by Geoffrey Testelin for generator-cozen-angular-test project
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
  * Date: 30/01/2018
- * Time: 21:43
+ * Time: 22:49
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
 module.exports = function (grunt) {
 	return {
-		options    : {
+		options: {
 			inline: true
 		},
-		dev        : {
+		dev    : {
 			options: {
 				context: {
 					config    : grunt.file.read('app/config/targets/config.dev.json'),
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
 				'<%= paths.app %>/index.html'             : '<%= paths.app %>/config/tpls/index.tpl.html'
 			}
 		},
-		test       : {
+		test   : {
 			options: {
 				context: {
 					config    : grunt.file.read('app/config/targets/config.test.json'),
@@ -39,11 +39,12 @@ module.exports = function (grunt) {
 				'<%= currentTarget %>/index.html'         : '<%= paths.app %>/config/tpls/index.tpl.html'
 			}
 		},
-		preprod    : {
+		preprod: {
 			options: {
 				context: {
-					config: grunt.file.read('app/config/targets/config.preprod.json'),
-					target: 'preprod'
+					config    : grunt.file.read('app/config/targets/config.preprod.json'),
+					configJson: grunt.file.readJSON('app/config/targets/config.preprod.json'),
+					target    : 'preprod'
 				}
 			},
 			files  : {
@@ -51,11 +52,12 @@ module.exports = function (grunt) {
 				'<%= currentTarget %>/index.html'         : '<%= paths.app %>/config/tpls/index.tpl.html'
 			}
 		},
-		prod       : {
+		prod   : {
 			options: {
 				context: {
-					config: grunt.file.read('app/config/targets/config.prod.json'),
-					target: 'prod'
+					config    : grunt.file.read('app/config/targets/config.prod.json'),
+					configJson: grunt.file.readJSON('app/config/targets/config.prod.json'),
+					target    : 'prod'
 				}
 			},
 			files  : {
@@ -64,22 +66,22 @@ module.exports = function (grunt) {
 			}
 		},
 		manifest   : {
-			options: {
-				context: {
-					config: grunt.file.readJSON('package.json')
-				}
-			},
-			src    : '<%= paths.app %>/config/tpls/manifest.tpl.json',
-			dest   : '<%= currentTarget %>/manifest.json'
-		},
-		devManifest: {
-			options: {
-				context: {
-					config: grunt.file.readJSON('package.json')
-				}
-			},
-			src    : '<%= paths.app %>/config/tpls/manifest.tpl.json',
-			dest   : '<%= paths.app %>/manifest.json'
-		}
+            options: {
+                context: {
+                    config: grunt.file.readJSON('package.json')
+                }
+            },
+            src    : '<%= paths.app %>/config/tpls/manifest.tpl.json',
+            dest   : '<%= currentTarget %>/manifest.json'
+        },
+        devManifest: {
+            options: {
+                context: {
+                    config: grunt.file.readJSON('package.json')
+                }
+            },
+            src    : '<%= paths.app %>/config/tpls/manifest.tpl.json',
+            dest   : '<%= paths.app %>/manifest.json'
+        }
 	};
 };

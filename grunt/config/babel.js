@@ -1,10 +1,10 @@
 /**
- * Generated header by Geoffrey Testelin for cozen-angular-generator-test project
+ * Generated header by Geoffrey Testelin for generator-cozen-angular-test project
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
  * Date: 30/01/2018
- * Time: 21:43
+ * Time: 22:49
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
@@ -26,7 +26,7 @@ module.exports = {
 			comments: false
 		},
 		files  : {
-			'<%= currentTarget %>/scripts/cozen-angular-generator-test.min.js': '<%= currentTarget %>/scripts/cozen-angular-generator-test.js'
+			'<%= currentTarget %>/scripts/generator-cozen-angular-test.min.js': '<%= currentTarget %>/scripts/generator-cozen-angular-test.js'
 		}
 	},
 	dev          : {
@@ -36,7 +36,7 @@ module.exports = {
 			comments: false
 		},
 		files  : {
-			'<%= paths.app %>/scripts/cozen-angular-generator-test.min.js': '<%= paths.app %>/scripts/cozen-angular-generator-test.js'
+			'<%= paths.app %>/scripts/generator-cozen-angular-test.min.js': '<%= paths.app %>/scripts/generator-cozen-angular-test.js'
 		}
 	},
 	vendors      : {
@@ -52,17 +52,17 @@ module.exports = {
 	},
 	concatScripts: {
 		files: {
-			'.tmp/release/scripts/cozen-angular-generator-test.min.js': '.tmp/release/scripts/cozen-angular-generator-test.min.js'
+			'.tmp/release/scripts/generator-cozen-angular-test.min.js': '.tmp/release/scripts/generator-cozen-angular-test.min.js'
 		}
 	},
 	concatJs     : {
 		files: {
-			'<%= paths.app %>/scripts/cozen-angular-generator-test.js': '<%= paths.app %>/scripts/cozen-angular-generator-test.js'
+			'<%= paths.app %>/scripts/generator-cozen-angular-test.js': '<%= paths.app %>/scripts/generator-cozen-angular-test.js'
 		}
 	},
 	concatRelease: {
 		files: {
-			'<%= currentTarget %>/scripts/cozen-angular-generator-test.js': '<%= currentTarget %>/scripts/cozen-angular-generator-test.js'
+			'<%= currentTarget %>/scripts/generator-cozen-angular-test.js': '<%= currentTarget %>/scripts/generator-cozen-angular-test.js'
 		}
 	}
 };

@@ -6,7 +6,7 @@
 	'use strict';
 
 	angular
-		.module('cozenAngularGeneratorTest')
+		.module('generatorCozenAngularTest')
 		.constant('config'/* @if true **, /* @endif *//* @echo config */);
 
 }(window.angular));

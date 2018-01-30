@@ -1,13 +1,13 @@
 {
     "manifest_version": 2,
-    "name": "Cozen Angular Generator Test",
-    "description": "This is the description for the project Cozen Angular Generator Test",
+    "name": "Generator Cozen Angular Test",
+    "description": "This is the description for the project Generator Cozen Angular Test",
     "author": "Geoffrey Testelin",
     "background": {
         "persistent": false
     },
     "homepage_url": "to-define",
-    "short_name": "Cozen Angular Generator Test",
+    "short_name": "Generator Cozen Angular Test",
     "theme_color": "#FFFFFF",
     "background_color": "white",
     "lang": "fr",

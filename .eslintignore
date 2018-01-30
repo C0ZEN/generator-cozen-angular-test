@@ -7,7 +7,7 @@
 /test/
 /preprod/
 /prod/
-/app/scripts/cozen-angular-generator-test.js
-/app/scripts/cozen-angular-generator-test.js.map
-/app/scripts/cozen-angular-generator-test.min.js
-/app/scripts/cozen-angular-generator-test.min.js.map
+/app/scripts/generator-cozen-angular-test.js
+/app/scripts/generator-cozen-angular-test.js.map
+/app/scripts/generator-cozen-angular-test.min.js
+/app/scripts/generator-cozen-angular-test.min.js.map

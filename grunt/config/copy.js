@@ -1,10 +1,10 @@
 /**
- * Generated header by Geoffrey Testelin for cozen-angular-generator-test project
+ * Generated header by Geoffrey Testelin for generator-cozen-angular-test project
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
  * Date: 30/01/2018
- * Time: 21:43
+ * Time: 22:49
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
@@ -33,8 +33,8 @@ module.exports = {
 	},
 	release   : {
 		files: {
-			'<%= currentTarget %>/styles/cozen-angular-generator-test.css'    : '<%= paths.app %>/styles/css/cozen-angular-generator-test.css',
-			'<%= currentTarget %>/styles/cozen-angular-generator-test.min.css': '<%= paths.app %>/styles/css/cozen-angular-generator-test.min.css',
+			'<%= currentTarget %>/styles/generator-cozen-angular-test.css'    : '<%= paths.app %>/styles/css/generator-cozen-angular-test.css',
+			'<%= currentTarget %>/styles/generator-cozen-angular-test.min.css': '<%= paths.app %>/styles/css/generator-cozen-angular-test.min.css',
 			'<%= currentTarget %>/styles/init-loader.css'            : '<%= paths.app %>/styles/css/init-loader.css',
 			'<%= currentTarget %>/styles/init-loader.min.css'        : '<%= paths.app %>/styles/css/init-loader.min.css'
 		}

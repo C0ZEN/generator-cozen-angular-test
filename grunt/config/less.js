@@ -1,10 +1,10 @@
 /**
- * Generated header by Geoffrey Testelin for cozen-angular-generator-test project
+ * Generated header by Geoffrey Testelin for generator-cozen-angular-test project
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
  * Date: 30/01/2018
- * Time: 21:43
+ * Time: 22:49
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
@@ -15,8 +15,8 @@ module.exports = {
 			sourceMap: true
 		},
 		files  : {
-			'<%= paths.app %>/styles/css/cozen-angular-generator-test.css': '<%= paths.app %>/styles/less/cozen-angular-generator-test.less',
-			'<%= paths.app %>/styles/css/init-loader.css'        : '<%= paths.app %>/styles/less/cozen-angular-generator-test.loader.less'
+			'<%= paths.app %>/styles/css/generator-cozen-angular-test.css': '<%= paths.app %>/styles/less/generator-cozen-angular-test.less',
+			'<%= paths.app %>/styles/css/init-loader.css'        : '<%= paths.app %>/styles/less/generator-cozen-angular-test.loader.less'
 		}
 	},
 	tmp : {
@@ -25,8 +25,8 @@ module.exports = {
 			sourceMap: true
 		},
 		files  : {
-			'.tmp/release/styles/cozen-angular-generator-test.css': '<%= paths.app %>/styles/less/cozen-angular-generator-test.less',
-			'.tmp/release/styles/init-loader.css'        : '<%= paths.app %>/styles/less/cozen-angular-generator-test.loader.less'
+			'.tmp/release/styles/generator-cozen-angular-test.css': '<%= paths.app %>/styles/less/generator-cozen-angular-test.less',
+			'.tmp/release/styles/init-loader.css'        : '<%= paths.app %>/styles/less/generator-cozen-angular-test.loader.less'
 		}
 	}
 };

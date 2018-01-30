@@ -1,9 +1,9 @@
-# Cozen Angular Generator Test
+# Generator Cozen Angular Test
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-This is the description for the project Cozen Angular Generator Test
+This is the description for the project Generator Cozen Angular Test
 
 ### Usage
 
