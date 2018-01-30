@@ -1,0 +1,1 @@
+# generator-cozen-angular-test
