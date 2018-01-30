@@ -66,22 +66,22 @@ module.exports = function (grunt) {
 			}
 		},
 		manifest   : {
-            options: {
-                context: {
-                    config: grunt.file.readJSON('package.json')
-                }
-            },
-            src    : '<%= paths.app %>/config/tpls/manifest.tpl.json',
-            dest   : '<%= currentTarget %>/manifest.json'
-        },
-        devManifest: {
-            options: {
-                context: {
-                    config: grunt.file.readJSON('package.json')
-                }
-            },
-            src    : '<%= paths.app %>/config/tpls/manifest.tpl.json',
-            dest   : '<%= paths.app %>/manifest.json'
-        }
+			options: {
+				context: {
+					config: grunt.file.readJSON('package.json')
+				}
+			},
+			src    : '<%= paths.app %>/config/tpls/manifest.tpl.json',
+			dest   : '<%= currentTarget %>/manifest.json'
+		},
+		devManifest: {
+			options: {
+				context: {
+					config: grunt.file.readJSON('package.json')
+				}
+			},
+			src    : '<%= paths.app %>/config/tpls/manifest.tpl.json',
+			dest   : '<%= paths.app %>/manifest.json'
+		}
 	};
 };

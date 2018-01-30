@@ -9,7 +9,7 @@
  */
 /* eslint valid-jsdoc:"off" */
 module.exports = {
-	master : {
+	master: {
 		options: {
 			verbose : true,
 			remote  : 'origin',

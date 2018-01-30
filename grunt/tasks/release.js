@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 
 		// Run the release task
 		grunt.task.run([
-		    'npm-command:test',
+			'npm-command:test',
 			'clean:release',
 			'clean:devIndex',
 			'wiredep',

@@ -45,15 +45,15 @@ module.exports = {
 		}
 	},
 	changelog: {
-        src    : 'CHANGELOG.md',
-        dest   : 'CHANGELOG.md',
-        options: {
-            replacements: [
-                {
+		src    : 'CHANGELOG.md',
+		dest   : 'CHANGELOG.md',
+		options: {
+			replacements: [
+				{
                     pattern    : /(\#\# \[Unreleased\])/g, // eslint-disable-line
-                    replacement: '## [Unreleased]\n\n## [<%= newVersion %>]'
-                }
-            ]
-        }
-    }
+					replacement: '## [Unreleased]\n\n## [<%= newVersion %>]'
+				}
+			]
+		}
+	}
 };

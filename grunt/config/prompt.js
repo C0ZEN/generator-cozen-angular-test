@@ -12,7 +12,7 @@ module.exports = function (grunt) {
 	const chalk = require('chalk');
 
 	return {
-		chooseRelease     : {
+		chooseRelease: {
 			options: {
 				questions: [
 					{
@@ -60,7 +60,7 @@ module.exports = function (grunt) {
 				]
 			}
 		},
-		confirmRelease    : {
+		confirmRelease: {
 			options: {
 				questions: [
 					{

@@ -10,12 +10,12 @@
 /* eslint valid-jsdoc:"off" */
 module.exports = {
 	options: {
-		files             : [
+		files: [
 			'package.json'
 		],
-		commit            : true,
-		commitMessage     : 'Release <%= newVersionTarget %> <%= newVersion %>',
-		commitFiles       : [
+		commit       : true,
+		commitMessage: 'Release <%= newVersionTarget %> <%= newVersion %>',
+		commitFiles  : [
 			'-a'
 		],
 		createTag         : false,

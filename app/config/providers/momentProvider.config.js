@@ -21,7 +21,7 @@
 
 	function provider(moment, config) {
 		moment
-        	.locale(config.languages.defaultLanguage);
+			.locale(config.languages.defaultLanguage);
 	}
 
 })(window.angular);

@@ -8,6 +8,7 @@
  * Version: 0.0.0
  */
 /* eslint valid-jsdoc:"off" */
+/* eslint no-magic-numbers:"off" */
 module.exports = function (grunt) {
 	grunt.registerTask('releaseBump', 'Create a new version for git with auto tagging', () => {
 		const radix = 10;

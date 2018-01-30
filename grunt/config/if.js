@@ -16,7 +16,7 @@ module.exports = function (grunt) {
 					return grunt.config.get('isChangelogUpdated');
 				}
 			},
-			ifTrue : [
+			ifTrue: [
 				'prompt:chooseRelease',
 				'prompt:confirmRelease',
 				'if:isReleaseConfirmed'
@@ -31,7 +31,7 @@ module.exports = function (grunt) {
 					return grunt.config.get('isReleaseConfirmed');
 				}
 			},
-			ifTrue : [
+			ifTrue: [
 				'gitcheckout:develop',
 				'string-replace:changelog',
 				'internal.bump',

@@ -12,19 +12,19 @@
 
 	angular
 		.module('generatorCozenAngularTest', [
-		    'ngAnimate',
-            'ngAria',
-            'ngCookies',
-            'ngMessages',
-            'ngResource',
-            'ngRoute',
-            'ngSanitize',
-            'ngTouch',
-            'ui.router',
-            'pascalprecht.translate',
-            'tmh.dynamicLocale',
-            'LocalStorageModule',
-            'log.ex.uo'
+			'ngAnimate',
+			'ngAria',
+			'ngCookies',
+			'ngMessages',
+			'ngResource',
+			'ngRoute',
+			'ngSanitize',
+			'ngTouch',
+			'ui.router',
+			'pascalprecht.translate',
+			'tmh.dynamicLocale',
+			'LocalStorageModule',
+			'log.ex.uo'
 		]);
 
 })(window.angular);
