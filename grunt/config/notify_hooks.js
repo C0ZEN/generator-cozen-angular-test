@@ -3,8 +3,8 @@
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
- * Date: 30/01/2018
- * Time: 22:49
+ * Date: 31/01/2018
+ * Time: 09:58
  * Version: 0.0.0
  */
 /* jscs:disable requireCamelCaseOrUpperCaseIdentifiers */

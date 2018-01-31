@@ -1,14 +1,14 @@
 /**
- * Generated header by Geoffrey Testelin for cozen-angular-generator-test project
+ * Generated header by Geoffrey Testelin for generator-cozen-angular-test project
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
- * Date: 30/01/2018
- * Time: 22:06
+ * Date: 31/01/2018
+ * Time: 10:26
  * Version: 0.0.0
  *
  * @ngdoc constant
- * @name cozenAngularGeneratorTest.constant:mainDirectoryConstant
+ * @name generatorCozenAngularTest.constant:mainConstant
  * @description
  *
  */
@@ -16,8 +16,8 @@
 	'use strict';
 
 	angular
-		.module('cozenAngularGeneratorTest')
-		.constant('mainDirectoryConstant', {
+		.module('generatorCozenAngularTest')
+		.constant('mainConstant', {
 		});
 
 })(window.angular);

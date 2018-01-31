@@ -1,14 +1,14 @@
 /**
- * Generated header by Geoffrey Testelin for cozen-angular-generator-test project
+ * Generated header by Geoffrey Testelin for generator-cozen-angular-test project
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
- * Date: 30/01/2018
- * Time: 22:06
+ * Date: 31/01/2018
+ * Time: 10:26
  * Version: 0.0.0
  *
  * @ngdoc controller
- * @name cozenAngularGeneratorTest.controller:mainDirectoryController
+ * @name generatorCozenAngularTest.controller:mainController
  * @function
  * @description
  *
@@ -17,13 +17,13 @@
 	'use strict';
 
 	angular
-		.module('cozenAngularGeneratorTest')
-		.controller('mainDirectoryController', mainDirectoryController);
+		.module('generatorCozenAngularTest')
+		.controller('mainController', mainController);
 
-	mainDirectoryController.$inject = [
+	mainController.$inject = [
 	];
 
-	function mainDirectoryController() {
+	function mainController() {
 		const vm = this;
 
 		vm.username = 'C0ZEN';

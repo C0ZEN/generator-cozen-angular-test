@@ -2,7 +2,30 @@
     "name": "generator-cozen-angular-test",
     "version": "0.0.0",
     "dependencies": {
-        
+        "reset-css": "^2.2.1",
+        "jquery": "^3.3.1",
+        "angular": "^1.6.8",
+        "angular-aria": "^1.6.8",
+        "angular-animate": "^1.6.8",
+        "angular-cookies": "^1.6.8",
+        "angular-messages": "^1.6.8",
+        "angular-resource": "^1.6.8",
+        "angular-route": "^1.6.8",
+        "angular-sanitize": "^1.6.8",
+        "angular-touch": "^1.6.8",
+        "moment": "^2.20.1",
+        "angular-translate": "^2.17.0",
+        "angular-uuid-service": "^0.1.0",
+        "angular-logex": "^0.0.14",
+        "angular-ui-router": "^1.0.14",
+        "angular-translate-loader-static-files": "^2.17.0",
+        "angular-translate-loader-url": "^2.17.0",
+        "angular-translate-loader-partial": "^2.17.0",
+        "chance": "^1.0.13",
+        "angular-dynamic-locale": "^0.1.32",
+        "lodash": "^4.17.4",
+        "animate.css": "^3.5.2",
+        "angular-local-storage": "^0.7.1"
     },
     "devDependencies": {},
     "appPath": "app",
@@ -16,7 +39,5 @@
             ]
         }
     },
-    "resolutions": {},
     "ignore": []
 }
-
