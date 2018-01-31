@@ -4,14 +4,12 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 31/01/2018
- * Time: 16:48
+ * Time: 17:45
  * Version: 0.0.0
  */
 /* eslint valid-jsdoc:"off" */
 module.exports = function (grunt) {
-	grunt.registerTask('release', 'Create a new stable version', () => {
-
-		// Run the release task
+	grunt.registerTask('release', 'Choose a target', () => {
 		grunt.task.run([
 			'prompt:chooseTarget',
 			'internal.release'

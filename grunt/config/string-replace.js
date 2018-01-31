@@ -4,7 +4,7 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 31/01/2018
- * Time: 16:48
+ * Time: 17:45
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
@@ -33,7 +33,7 @@ module.exports = {
 		src    : '<%= currentTarget %>/index.html',
 		dest   : '<%= currentTarget %>/index.html'
 	},
-	cssPaths : {
+	cssPaths: {
 		options: {
 			replacements: [
 				{
@@ -53,7 +53,7 @@ module.exports = {
 		options: {
 			replacements: [
 				{
-					pattern    : /(\#\# \[Unreleased\])/g, // eslint-disable-line
+                    pattern    : /(\#\# \[Unreleased\])/g, // eslint-disable-line
 					replacement: '## [Unreleased]\n\n## [<%= newVersion %>]'
 				}
 			]

@@ -55,6 +55,7 @@ module.exports = function (grunt) {
 
 	grunt.loadNpmTasks('grunt-notify');
 	grunt.loadNpmTasks('grunt-git');
+	grunt.loadNpmTasks('grunt-force-task');
 
 	grunt.task.run('notify_hooks');
 };
