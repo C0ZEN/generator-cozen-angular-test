@@ -9,7 +9,7 @@
  */
 /* eslint key-spacing:"off" */
 module.exports = {
-	devIndex: {
+	devIndex : {
 		options: {
 			replacements: [
 				{
@@ -18,19 +18,22 @@ module.exports = {
 				}
 			]
 		},
-		expand : true,
-		cwd    : '<%= paths.app %>',
-		src    : 'index.html',
-		dest   : '<%= paths.app %>'
+		src    : '<%= paths.app %>/index.html',
+		dest   : '<%= paths.app %>/index.html'
 	},
-	index   : {
-		options: '<%= string-replace.devIndex.options %>',
-		expand : true,
-		cwd    : '<%= currentTarget %>',
-		src    : 'index.html',
-		dest   : '<%= currentTarget %>'
+	index    : {
+		options: {
+			replacements: [
+				{
+					pattern    : /(..\/..\/)/gmi,
+					replacement: ''
+				}
+			]
+		},
+		src    : '<%= currentTarget %>/index.html',
+		dest   : '<%= currentTarget %>/index.html'
 	},
-	cssPaths: {
+	cssPaths : {
 		options: {
 			replacements: [
 				{
@@ -50,7 +53,7 @@ module.exports = {
 		options: {
 			replacements: [
 				{
-                    pattern    : /(\#\# \[Unreleased\])/g, // eslint-disable-line
+					pattern    : /(\#\# \[Unreleased\])/g, // eslint-disable-line
 					replacement: '## [Unreleased]\n\n## [<%= newVersion %>]'
 				}
 			]

@@ -2,7 +2,7 @@
     "name": "generator-cozen-angular-test",
     "productName": "generator-cozen-angular-test",
     "description": "This is the description for the project Generator Cozen Angular Test",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "main": "",
     "files": [],
     "private": true,
