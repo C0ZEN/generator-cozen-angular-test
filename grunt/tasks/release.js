@@ -4,25 +4,23 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 31/01/2018
- * Time: 09:58
+ * Time: 16:48
  * Version: 0.0.0
  */
 /* eslint valid-jsdoc:"off" */
 module.exports = function (grunt) {
 	grunt.registerMultiTask('release', 'Create a new stable version', () => {
 
-		// Get the current target
-		const target = this.task.current.data.target;
-		grunt.config.set('currentTarget', target);
-
 		// Run the release task
 		grunt.task.run([
+			'prompt:chooseTarget',
 			'npm-command:test',
 			'clean:release',
 			'clean:devIndex',
 			'wiredep',
-			'preprocess:' + target,
+			'preprocess:' + grunt.config.get('currentTarget'),
 			'preprocess:manifest',
+			'preprocess:structuredData',
 			'jsMin:release',
 			'less:main',
 			'languages:release',

@@ -4,7 +4,7 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 31/01/2018
- * Time: 09:58
+ * Time: 16:48
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
@@ -82,6 +82,24 @@ module.exports = function (grunt) {
 			},
 			src    : '<%= paths.app %>/config/tpls/manifest.tpl.json',
 			dest   : '<%= paths.app %>/manifest.json'
+		},
+		structuredData   : {
+			options: {
+				context: {
+					config: grunt.file.readJSON('app/config/targets/config.dev.json')
+				}
+			},
+			src    : '<%= paths.app %>/config/tpls/structured-data.tpl.json',
+			dest   : '<%= currentTarget %>/structured-data.json'
+		},
+		devStructuredData: {
+			options: {
+				context: {
+					config: grunt.file.readJSON('app/config/targets/config.dev.json')
+				}
+			},
+			src    : '<%= paths.app %>/config/tpls/structured-data.tpl.json',
+			dest   : '<%= paths.app %>/structured-data.json'
 		}
 	};
 };

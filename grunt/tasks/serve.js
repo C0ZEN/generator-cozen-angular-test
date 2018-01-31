@@ -4,7 +4,7 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 31/01/2018
- * Time: 09:58
+ * Time: 16:48
  * Version: 0.0.0
  */
 /* eslint valid-jsdoc:"off" */
@@ -15,6 +15,7 @@ module.exports = function (grunt) {
 			'wiredep',
 			'preprocess:dev',
 			'preprocess:devManifest',
+			'preprocess:devStructuredData',
 			'string-replace:devIndex',
 			'htmlmin:dev',
 			'jsMin:dev',

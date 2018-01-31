@@ -4,7 +4,7 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 31/01/2018
- * Time: 09:58
+ * Time: 16:48
  * Version: 0.0.0
  */
 /* eslint valid-jsdoc:"off" */
@@ -80,6 +80,40 @@ module.exports = function (grunt) {
 						type   : 'confirm',
 						message: 'Did you update the ' + chalk.cyan('CHANGELOG.md') + ' ?',
 						default: false
+					}
+				]
+			}
+		},
+		chooseTarget: {
+			options: {
+				questions: [
+					{
+						config : 'target',
+						type   : 'list',
+						message: 'Target for the release:',
+						choices: [
+							{
+								name   : 'test',
+								value  : 'test',
+								checked: true
+							},
+							{
+								name : 'preprod',
+								value: 'preprod'
+							},
+							{
+								name : 'prod',
+								value: 'prod'
+							}
+						],
+						filter(target) {
+
+							// Save the target
+							grunt.config.set('currentTarget', target);
+
+							// Return the target
+							return target;
+						}
 					}
 				]
 			}
