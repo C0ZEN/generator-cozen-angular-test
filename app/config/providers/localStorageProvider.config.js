@@ -4,7 +4,7 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 03/02/2018
- * Time: 13:32
+ * Time: 15:49
  * Version: 0.0.0
  */
 (function (angular) {
@@ -21,10 +21,10 @@
 
 	function provider(localStorageServiceProvider, config) {
 		localStorageServiceProvider
-			.setPrefix(config.app.name)
-			.setStorageType('localStorage')
-			.setDefaultToCookie(false)
-			.setNotify(false, false);
+            .setPrefix(config.app.name)
+            .setStorageType('localStorage')
+            .setDefaultToCookie(false)
+            .setNotify(false, false);
 	}
 
 })(window.angular);

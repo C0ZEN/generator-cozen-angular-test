@@ -7,19 +7,23 @@
  * Time: 15:49
  * Version: 0.0.0
  */
+/* eslint valid-jsdoc:"off" */
 /* eslint key-spacing:"off" */
 module.exports = {
-	release: {
+	html: {
 		options: {
-			module : 'generatorCozenAngularTest',
-			htmlmin: '<%= htmlmin.release.options %>'
+			pretty: true
 		},
-		cwd    : '<%= paths.app %>',
-		src    : [
-			'**/*.html',
-			'!index.html',
-			'!config/tpls/index.tpl.html'
-		],
-		dest   : '.tmp/release/template-cache.js'
+		files  : [
+			{
+				cwd   : '<%= paths.app %>',
+				src   : '**/*.pug',
+				dest  : '<%= paths.app %>',
+				expand: true,
+				rename: ($dest, $src) => {
+					return ($dest + '/' + $src).replace('.pug', '.html');
+				}
+			}
+		]
 	}
 };

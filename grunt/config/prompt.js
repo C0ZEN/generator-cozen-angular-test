@@ -4,7 +4,7 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 03/02/2018
- * Time: 13:32
+ * Time: 15:49
  * Version: 0.0.0
  */
 /* eslint valid-jsdoc:"off" */
@@ -12,7 +12,7 @@ module.exports = function (grunt) {
 	const chalk = require('chalk');
 
 	return {
-		chooseRelease: {
+		chooseRelease     : {
 			options: {
 				questions: [
 					{
@@ -60,7 +60,7 @@ module.exports = function (grunt) {
 				]
 			}
 		},
-		confirmRelease: {
+		confirmRelease    : {
 			options: {
 				questions: [
 					{
@@ -84,39 +84,39 @@ module.exports = function (grunt) {
 				]
 			}
 		},
-		chooseTarget: {
-			options: {
-				questions: [
-					{
-						config : 'target',
-						type   : 'list',
-						message: 'Target for the release:',
-						choices: [
-							{
-								name   : 'test',
-								value  : 'test',
-								checked: true
-							},
-							{
-								name : 'preprod',
-								value: 'preprod'
-							},
-							{
-								name : 'prod',
-								value: 'prod'
-							}
-						],
-						filter(target) {
+		chooseTarget     : {
+            options: {
+                questions: [
+                    {
+                        config : 'target',
+                        type   : 'list',
+                        message: 'Target for the release:',
+                        choices: [
+                            {
+                                name   : 'test',
+                                value  : 'test',
+                                checked: true
+                            },
+                            {
+                                name : 'preprod',
+                                value: 'preprod'
+                            },
+                            {
+                                name : 'prod',
+                                value: 'prod'
+                            }
+                        ],
+                        filter(target) {
 
-							// Save the target
-							grunt.config.set('currentTarget', target);
+                            // Save the target
+                            grunt.config.set('currentTarget', target);
 
-							// Return the target
-							return target;
-						}
-					}
-				]
-			}
-		}
+                            // Return the target
+                            return target;
+                        }
+                    }
+                ]
+            }
+        }
 	};
 };

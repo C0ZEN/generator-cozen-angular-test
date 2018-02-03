@@ -4,7 +4,7 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 03/02/2018
- * Time: 13:32
+ * Time: 15:49
  * Version: 0.0.0
  */
 /* eslint valid-jsdoc:"off" */
@@ -14,6 +14,7 @@ module.exports = function (grunt) {
 			'npm-command:test',
 			'clean:release',
 			'clean:devIndex',
+			'pug:html',
 			'preprocess:' + grunt.config.get('currentTarget'),
 			'preprocess:manifest',
 			'preprocess:structuredData',

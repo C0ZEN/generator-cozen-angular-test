@@ -4,7 +4,7 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 03/02/2018
- * Time: 13:32
+ * Time: 15:49
  * Version: 0.0.0
  */
 (function (angular) {
@@ -21,8 +21,8 @@
 
 	function provider($compileProvider, config) {
 		$compileProvider
-			.debugInfoEnabled(config.debug.compile)
-			.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|file|blob):/);
+            .debugInfoEnabled(config.debug.compile)
+            .aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|file|blob):/);
 	}
 
 })(window.angular);

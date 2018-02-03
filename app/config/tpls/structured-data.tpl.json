@@ -1,23 +1,23 @@
 {
-	"name": "Generator Cozen Angular Test",
-	"description": "This is the description for the project Generator Cozen Angular Test",
-	"author": {
-		"@type": "Person",
-		"name": "Geoffrey Testelin"
-	},
-	"@type": "WebSite",
-	"url": "<!-- @echo config.app.canonicalUrl -->",
-	"image": null,
-	"publisher": {
-		"@type": "Organization",
-		"logo": {
-			"@type": "ImageObject",
-			"url": null
-		},
-		"name": "Generator Cozen Angular Test"
-	},
-	"headline": "This is the description for the project Generator Cozen Angular Test",
-	"dateModified": null,
-	"datePublished": null,
-	"@context": "http://schema.org"
+    "name"            : "Generator Cozen Angular Test",
+    "description"     : "This is the description for the project Generator Cozen Angular Test",
+    "author"          : {
+        "@type": "Person",
+        "name" : "Geoffrey Testelin"
+    },
+    "@type"           : "WebSite",
+    "url"             : "<!-- @echo config.app.canonicalUrl -->",
+    "image"           : null,
+    "publisher"       : {
+        "@type": "Organization",
+        "logo": {
+            "@type": "ImageObject",
+            "url"  : null
+        },
+        "name" : "Generator Cozen Angular Test"
+    },
+    "headline"        : "This is the description for the project Generator Cozen Angular Test",
+    "dateModified"    : null,
+    "datePublished"   : null,
+    "@context"        : "http://schema.org"
 }

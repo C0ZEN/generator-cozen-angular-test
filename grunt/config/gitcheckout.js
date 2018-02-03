@@ -4,12 +4,12 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 03/02/2018
- * Time: 13:32
+ * Time: 15:49
  * Version: 0.0.0
  */
 /* eslint valid-jsdoc:"off" */
 module.exports = {
-	master: {
+	master : {
 		options: {
 			verbose  : true,
 			branch   : 'master',

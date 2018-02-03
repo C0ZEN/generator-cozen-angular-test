@@ -4,12 +4,12 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 03/02/2018
- * Time: 13:32
+ * Time: 15:49
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
 module.exports = {
-	dev       : {
+	dev    : {
 		options: {
 			keepSpecialComments: 0,
 			sourceMap          : true
@@ -17,7 +17,7 @@ module.exports = {
 		files  : [
 			{
 				'<%= paths.app %>/styles/css/generator-cozen-angular-test.min.css': '<%= paths.app %>/styles/css/generator-cozen-angular-test.css',
-				'<%= paths.app %>/styles/css/init-loader.min.css'                 : '<%= paths.app %>/styles/css/init-loader.css'
+				'<%= paths.app %>/styles/css/init-loader.min.css'        : '<%= paths.app %>/styles/css/init-loader.css'
 			}
 		]
 	},
@@ -32,7 +32,7 @@ module.exports = {
 			}
 		]
 	},
-	vendors   : {
+	vendors: {
 		options: {
 			keepSpecialComments: 0,
 			sourceMap          : false

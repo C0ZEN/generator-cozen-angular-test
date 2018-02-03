@@ -4,24 +4,24 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 03/02/2018
- * Time: 13:32
+ * Time: 15:49
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
 module.exports = {
-	styles      : {
+	styles    : {
 		expand: true,
 		cwd   : '.tmp/release/styles',
 		src   : '*.css',
 		dest  : '<%= currentTarget %>/styles/css'
 	},
-	languages   : {
+	languages : {
 		expand: true,
 		cwd   : '<%= paths.app %>/languages/min',
 		dest  : '<%= currentTarget %>/languages/',
 		src   : '*.json'
 	},
-	other       : {
+	other     : {
 		files: [
 			{
 				expand: true,
@@ -31,15 +31,15 @@ module.exports = {
 			}
 		]
 	},
-	release     : {
+	release   : {
 		files: {
 			'<%= currentTarget %>/styles/generator-cozen-angular-test.css'    : '<%= paths.app %>/styles/css/generator-cozen-angular-test.css',
 			'<%= currentTarget %>/styles/generator-cozen-angular-test.min.css': '<%= paths.app %>/styles/css/generator-cozen-angular-test.min.css',
-			'<%= currentTarget %>/styles/init-loader.css'                     : '<%= paths.app %>/styles/css/init-loader.css',
-			'<%= currentTarget %>/styles/init-loader.min.css'                 : '<%= paths.app %>/styles/css/init-loader.min.css'
+			'<%= currentTarget %>/styles/init-loader.css'            : '<%= paths.app %>/styles/css/init-loader.css',
+			'<%= currentTarget %>/styles/init-loader.min.css'        : '<%= paths.app %>/styles/css/init-loader.min.css'
 		}
 	},
-	components  : {
+	components: {
 		files: [
 			{
 				expand: true,
@@ -53,7 +53,7 @@ module.exports = {
 			}
 		]
 	},
-	i18n        : {
+	i18n      : {
 		files: {
 			'<%= currentTarget %>/languages/i18n/fr.js': 'bower_components/angular-i18n/angular-locale_fr.js'
 		}

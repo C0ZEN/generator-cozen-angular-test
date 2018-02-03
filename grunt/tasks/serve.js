@@ -4,7 +4,7 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 03/02/2018
- * Time: 13:32
+ * Time: 15:49
  * Version: 0.0.0
  */
 /* eslint valid-jsdoc:"off" */
@@ -12,6 +12,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('serve', 'Compile then start a connect web server', () => {
 		grunt.task.run([
 			'clean:server',
+			'pug:html',
 			'vendors',
 			'postcss:vendorsDev',
 			'cssmin:vendorsDev',
