@@ -3,8 +3,8 @@
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
- * Date: 31/01/2018
- * Time: 17:45
+ * Date: 03/02/2018
+ * Time: 13:32
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
@@ -73,7 +73,7 @@ module.exports = {
 		files  : [
 			'<%= paths.app %>/scripts/generator-cozen-angular-test.min.js',
 			'<%= paths.app %>/styles/css/*.css',
-			'<%= paths.app %>/images/**/*.{png,jpg,jpeg,gif,webp,svg}'
+			'<%= paths.app %>/images/**/*.{png,jpg,jpeg,gif,webp,svg,ico}'
 		]
 	}
 };

@@ -3,8 +3,8 @@
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
- * Date: 31/01/2018
- * Time: 17:45
+ * Date: 03/02/2018
+ * Time: 13:32
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
@@ -16,7 +16,7 @@ module.exports = {
 		},
 		files  : {
 			'<%= paths.app %>/styles/css/generator-cozen-angular-test.css': '<%= paths.app %>/styles/less/generator-cozen-angular-test.less',
-			'<%= paths.app %>/styles/css/init-loader.css'        : '<%= paths.app %>/styles/less/generator-cozen-angular-test.loader.less'
+			'<%= paths.app %>/styles/css/init-loader.css'                 : '<%= paths.app %>/styles/less/generator-cozen-angular-test.loader.less'
 		}
 	},
 	tmp : {
@@ -26,7 +26,7 @@ module.exports = {
 		},
 		files  : {
 			'.tmp/release/styles/generator-cozen-angular-test.css': '<%= paths.app %>/styles/less/generator-cozen-angular-test.less',
-			'.tmp/release/styles/init-loader.css'        : '<%= paths.app %>/styles/less/generator-cozen-angular-test.loader.less'
+			'.tmp/release/styles/init-loader.css'                 : '<%= paths.app %>/styles/less/generator-cozen-angular-test.loader.less'
 		}
 	}
 };

@@ -3,8 +3,8 @@
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
- * Date: 31/01/2018
- * Time: 17:45
+ * Date: 03/02/2018
+ * Time: 13:32
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */

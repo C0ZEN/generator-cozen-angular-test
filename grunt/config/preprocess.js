@@ -3,17 +3,17 @@
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
- * Date: 31/01/2018
- * Time: 17:45
+ * Date: 03/02/2018
+ * Time: 13:32
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
 module.exports = function (grunt) {
 	return {
-		options: {
+		options          : {
 			inline: true
 		},
-		dev    : {
+		dev              : {
 			options: {
 				context: {
 					config    : grunt.file.read('app/config/targets/config.dev.json'),
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
 				'<%= paths.app %>/index.html'             : '<%= paths.app %>/config/tpls/index.tpl.html'
 			}
 		},
-		test   : {
+		test             : {
 			options: {
 				context: {
 					config    : grunt.file.read('app/config/targets/config.test.json'),
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
 				'<%= currentTarget %>/index.html'         : '<%= paths.app %>/config/tpls/index.tpl.html'
 			}
 		},
-		preprod: {
+		preprod          : {
 			options: {
 				context: {
 					config    : grunt.file.read('app/config/targets/config.preprod.json'),
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
 				'<%= currentTarget %>/index.html'         : '<%= paths.app %>/config/tpls/index.tpl.html'
 			}
 		},
-		prod   : {
+		prod             : {
 			options: {
 				context: {
 					config    : grunt.file.read('app/config/targets/config.prod.json'),
@@ -65,7 +65,7 @@ module.exports = function (grunt) {
 				'<%= currentTarget %>/index.html'         : '<%= paths.app %>/config/tpls/index.tpl.html'
 			}
 		},
-		manifest   : {
+		manifest         : {
 			options: {
 				context: {
 					config: grunt.file.readJSON('package.json')
@@ -74,7 +74,7 @@ module.exports = function (grunt) {
 			src    : '<%= paths.app %>/config/tpls/manifest.tpl.json',
 			dest   : '<%= currentTarget %>/manifest.json'
 		},
-		devManifest: {
+		devManifest      : {
 			options: {
 				context: {
 					config: grunt.file.readJSON('package.json')

@@ -1,5 +1,15 @@
+/**
+ * Generated header by Geoffrey Testelin for generator-cozen-angular-test project
+ * Created with: generator-cozen-angular
+ *
+ * Created by: Geoffrey Testelin
+ * Date: 03/02/2018
+ * Time: 13:32
+ * Version: 0.0.0
+ */
+/* eslint valid-jsdoc:"off" */
 module.exports = function (grunt) {
-	grunt.registerTask('internal.release', 'Create a new stable version ezfez', () => {
+	grunt.registerTask('internal.release', 'Create a new stable version', () => {
 		grunt.task.run([
 			'npm-command:test',
 			'clean:release',

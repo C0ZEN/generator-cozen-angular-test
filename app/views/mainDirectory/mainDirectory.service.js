@@ -21,12 +21,10 @@
 		.factory('mainService', mainService);
 
 	mainService.$inject = [
-
 	];
 
 	function mainService() {
 		return {
-
 		};
 	}
 
