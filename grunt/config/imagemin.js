@@ -19,7 +19,7 @@ module.exports = {
 			{
 				expand: true,
 				cwd   : '<%= paths.app %>/images',
-				src   : '**/*.{png,jpg,jpeg,gif,svg}',
+				src   : '**/*.{png,jpg,jpeg,gif,svg,ico}',
 				dest  : '<%= currentTarget %>/images'
 			}
 		]

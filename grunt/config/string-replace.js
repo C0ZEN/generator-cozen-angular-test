@@ -9,31 +9,19 @@
  */
 /* eslint key-spacing:"off" */
 module.exports = {
-	devIndex : {
+	vendors  : {
 		options: {
 			replacements: [
 				{
 					pattern    : /(..\/..\/)/gmi,
-					replacement: ''
+					replacement: '../../../'
 				}
 			]
 		},
-		src    : '<%= paths.app %>/index.html',
-		dest   : '<%= paths.app %>/index.html'
+		src    : '<%= paths.app %>/config/tpls/vendors-generated.tpl.html',
+		dest   : '<%= paths.app %>/config/tpls/vendors-generated.tpl.html'
 	},
-	index    : {
-		options: {
-			replacements: [
-				{
-					pattern    : /(..\/..\/)/gmi,
-					replacement: ''
-				}
-			]
-		},
-		src    : '<%= currentTarget %>/index.html',
-		dest   : '<%= currentTarget %>/index.html'
-	},
-	cssPaths: {
+	cssPaths : {
 		options: {
 			replacements: [
 				{
@@ -53,7 +41,7 @@ module.exports = {
 		options: {
 			replacements: [
 				{
-                    pattern    : /(\#\# \[Unreleased\])/g, // eslint-disable-line
+					pattern    : /(\#\# \[Unreleased\])/g, // eslint-disable-line
 					replacement: '## [Unreleased]\n\n## [<%= newVersion %>]'
 				}
 			]

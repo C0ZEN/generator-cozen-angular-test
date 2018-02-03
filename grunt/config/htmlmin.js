@@ -9,15 +9,20 @@
  */
 /* eslint key-spacing:"off" */
 module.exports = {
+	options: {
+		minifyCSS                  : true,
+		minifyJS                   : true,
+		removeComments             : true,
+		useShortDoctype            : true,
+		sortAttributes             : true,
+		sortClassName              : true,
+		decodeEntities             : true,
+		collapseWhitespace         : true,
+		removeAttributeQuotes      : true,
+		collapseInlineTagWhitespace: true
+	},
 	dev    : {
-		options: {
-			collapseBooleanAttributes: true,
-			collapseWhitespace       : true,
-			removeAttributeQuotes    : true,
-			removeComments           : true,
-			removeCommentsFromCDATA  : true
-		},
-		files  : [
+		files: [
 			{
 				expand: true,
 				cwd   : '<%= paths.app %>',
@@ -27,8 +32,7 @@ module.exports = {
 		]
 	},
 	release: {
-		options: '<%= htmlmin.dev.options %>',
-		files  : [
+		files: [
 			{
 				expand: true,
 				cwd   : '<%= currentTarget %>',

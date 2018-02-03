@@ -29,26 +29,21 @@
               content="This is the description for the project Generator Cozen Angular Test">
         <meta property="og:site_name"
               content="Generator Cozen Angular Test">
-        
+
         <meta name="twitter:card"
               content="summary">
         <meta name="twitter:site"
               content="@C0ZEN">
         <meta name="twitter:creator"
               content="@C0ZEN">
-        
+
         <script type="application/ld+json"
                 src="structured-data.json">
         </script>
 
-        <!-- build:css(.) styles/vendor.css-->
-        <!-- bower:css-->
-        <link rel="stylesheet" href="../../bower_components/reset-css/reset.css" />
-        <link rel="stylesheet" href="../../bower_components/animate.css/animate.css" />
-        <!-- endbower-->
-        <!-- endbuild-->
-
         <!-- @if target="dev" -->
+        <link rel="stylesheet"
+              href="styles/css/vendors.min.css"/>
         <link rel="stylesheet"
               href="styles/css/init-loader.min.css">
         <link rel="stylesheet"
@@ -57,21 +52,27 @@
 
         <!-- @if target="test" -->
         <link rel="stylesheet"
-              href="styles/css/init-loader.min.css">
+              href="styles/vendors.min.css"/>
+        <link rel="stylesheet"
+              href="styles/init-loader.min.css">
         <link rel="stylesheet"
               href="styles/generator-cozen-angular-test.min.css">
         <!-- @endif -->
 
         <!-- @if target="preprod" -->
         <link rel="stylesheet"
-              href="styles/css/init-loader.min.css">
+              href="styles/vendors.min.css"/>
+        <link rel="stylesheet"
+              href="styles/init-loader.min.css">
         <link rel="stylesheet"
               href="styles/generator-cozen-angular-test.min.css">
         <!-- @endif -->
 
         <!-- @if target="prod" -->
         <link rel="stylesheet"
-              href="styles/css/init-loader.min.css">
+              href="styles/vendors.min.css"/>
+        <link rel="stylesheet"
+              href="styles/init-loader.min.css">
         <link rel="stylesheet"
               href="styles/generator-cozen-angular-test.min.css">
         <!-- @endif -->
@@ -122,32 +123,8 @@
         <!-- Main view -->
         <ui-view></ui-view>
 
-        <!-- build:js(.) scripts/vendor.js-->
-        <!-- bower:js-->
-        <script src="../../bower_components/jquery/dist/jquery.js"></script>
-        <script src="../../bower_components/angular/angular.js"></script>
-        <script src="../../bower_components/angular-aria/angular-aria.js"></script>
-        <script src="../../bower_components/angular-animate/angular-animate.js"></script>
-        <script src="../../bower_components/angular-cookies/angular-cookies.js"></script>
-        <script src="../../bower_components/angular-messages/angular-messages.js"></script>
-        <script src="../../bower_components/angular-resource/angular-resource.js"></script>
-        <script src="../../bower_components/angular-route/angular-route.js"></script>
-        <script src="../../bower_components/angular-sanitize/angular-sanitize.js"></script>
-        <script src="../../bower_components/angular-touch/angular-touch.js"></script>
-        <script src="../../bower_components/moment/moment.js"></script>
-        <script src="../../bower_components/angular-translate/angular-translate.js"></script>
-        <script src="../../bower_components/angular-uuid-service/angular-uuid-service.js"></script>
-        <script src="../../bower_components/angular-logex/dist/log-ex-unobtrusive.js"></script>
-        <script src="../../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-        <script src="../../bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
-        <script src="../../bower_components/angular-translate-loader-url/angular-translate-loader-url.js"></script>
-        <script src="../../bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
-        <script src="../../bower_components/chance/chance.js"></script>
-        <script src="../../bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
-        <script src="../../bower_components/lodash/lodash.js"></script>
-        <script src="../../bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
-        <!-- endbower-->
-        <!-- endbuild-->
+        <!-- Vendors JS -->
+        <script src="scripts/vendors.min.js"></script>
 
         <!-- @if target="dev" -->
         <script src="scripts/generator-cozen-angular-test.min.js"></script>

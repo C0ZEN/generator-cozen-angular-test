@@ -39,17 +39,6 @@ module.exports = {
 			'<%= paths.app %>/scripts/generator-cozen-angular-test.min.js': '<%= paths.app %>/scripts/generator-cozen-angular-test.js'
 		}
 	},
-	vendors      : {
-		options: {
-			sourceMap: false,
-			minified : true,
-			compact  : true,
-			comments : false
-		},
-		files  : {
-			'<%= currentTarget %>/scripts/vendor.js': '<%= currentTarget %>/scripts/vendor.js'
-		}
-	},
 	concatScripts: {
 		files: {
 			'.tmp/release/scripts/generator-cozen-angular-test.min.js': '.tmp/release/scripts/generator-cozen-angular-test.min.js'

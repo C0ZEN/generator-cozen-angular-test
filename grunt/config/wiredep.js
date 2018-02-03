@@ -11,7 +11,7 @@
 module.exports = {
 	app: {
 		src       : [
-			'<%= paths.app %>/config/tpls/index.tpl.html'
+			'<%= paths.app %>/config/tpls/vendors.tpl.html'
 		],
 		ignorePath: /\.\.\//
 	}

@@ -10,7 +10,7 @@
 /* eslint key-spacing:"off" */
 module.exports = function (grunt) {
 	return {
-		dev    : {
+		dev       : {
 			options: {
 				map       : true,
 				processors: [
@@ -35,10 +35,16 @@ module.exports = function (grunt) {
 				}
 			]
 		},
-		vendors: {
+		vendorsDev: {
 			options: '<%= postcss.dev.options %>',
 			files  : {
-				'<%= currentTarget %>/styles/vendor.css': '<%= currentTarget %>/styles/vendor.css'
+				'<%= paths.app %>/styles/css/vendors.min.css': '.tmp/vendors/vendors.css'
+			}
+		},
+		vendors   : {
+			options: '<%= postcss.dev.options %>',
+			files  : {
+				'<%= currentTarget %>/styles/vendors.min.css': '.tmp/vendors/vendors.css'
 			}
 		}
 	};

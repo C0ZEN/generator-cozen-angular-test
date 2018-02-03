@@ -58,4 +58,10 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-force-task');
 
 	grunt.task.run('notify_hooks');
+
+	grunt.config.set('oldVersion', null);
+	grunt.config.set('newPatchVersion', null);
+	grunt.config.set('newMinorVersion', null);
+	grunt.config.set('newMajorVersion', null);
+	grunt.config.set('chosenRelease', null);
 };

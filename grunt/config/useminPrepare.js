@@ -9,9 +9,9 @@
  */
 /* eslint key-spacing:"off" */
 module.exports = {
-	html   : '<%= currentTarget %>/index.html',
+	html   : '<%= paths.app %>/config/tpls/vendors-generated.tpl.html',
 	options: {
-		dest: '<%= currentTarget %>',
+		dest: '.tmp/vendors',
 		flow: {
 			steps: {
 				js : [

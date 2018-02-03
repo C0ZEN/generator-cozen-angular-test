@@ -9,19 +9,19 @@
  */
 /* eslint key-spacing:"off" */
 module.exports = {
-	styles    : {
+	styles      : {
 		expand: true,
 		cwd   : '.tmp/release/styles',
 		src   : '*.css',
 		dest  : '<%= currentTarget %>/styles/css'
 	},
-	languages : {
+	languages   : {
 		expand: true,
 		cwd   : '<%= paths.app %>/languages/min',
 		dest  : '<%= currentTarget %>/languages/',
 		src   : '*.json'
 	},
-	other     : {
+	other       : {
 		files: [
 			{
 				expand: true,
@@ -31,15 +31,15 @@ module.exports = {
 			}
 		]
 	},
-	release   : {
+	release     : {
 		files: {
 			'<%= currentTarget %>/styles/generator-cozen-angular-test.css'    : '<%= paths.app %>/styles/css/generator-cozen-angular-test.css',
 			'<%= currentTarget %>/styles/generator-cozen-angular-test.min.css': '<%= paths.app %>/styles/css/generator-cozen-angular-test.min.css',
-			'<%= currentTarget %>/styles/init-loader.css'            : '<%= paths.app %>/styles/css/init-loader.css',
-			'<%= currentTarget %>/styles/init-loader.min.css'        : '<%= paths.app %>/styles/css/init-loader.min.css'
+			'<%= currentTarget %>/styles/init-loader.css'                     : '<%= paths.app %>/styles/css/init-loader.css',
+			'<%= currentTarget %>/styles/init-loader.min.css'                 : '<%= paths.app %>/styles/css/init-loader.min.css'
 		}
 	},
-	components: {
+	components  : {
 		files: [
 			{
 				expand: true,
@@ -53,9 +53,26 @@ module.exports = {
 			}
 		]
 	},
-	i18n      : {
+	i18n        : {
 		files: {
 			'<%= currentTarget %>/languages/i18n/fr.js': 'bower_components/angular-i18n/angular-locale_fr.js'
 		}
+	},
+	medias      : {
+		expand: true,
+		dest  : '<%= currentTarget %>/medias',
+		src   : '<%= paths.app %>/medias'
+	},
+	vendors     : {
+		src : '<%= paths.app %>/config/tpls/vendors.tpl.html',
+		dest: '<%= paths.app %>/config/tpls/vendors-generated.tpl.html'
+	},
+	vendorsJsDev: {
+		src : '.tmp/vendors/vendors.js',
+		dest: '<%= paths.app %>/scripts/vendors.min.js'
+	},
+	vendorsJs   : {
+		src : '.tmp/vendors/vendors.js',
+		dest: '<%= currentTarget %>/scripts/vendors.min.js'
 	}
 };

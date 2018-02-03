@@ -21,6 +21,17 @@ module.exports = {
 			}
 		]
 	},
+	vendorsDev: {
+		options: {
+			keepSpecialComments: 0,
+			sourceMap          : false
+		},
+		files  : [
+			{
+				'<%= paths.app %>/styles/css/vendors.min.css': '<%= paths.app %>/styles/css/vendors.min.css'
+			}
+		]
+	},
 	vendors: {
 		options: {
 			keepSpecialComments: 0,
@@ -28,7 +39,7 @@ module.exports = {
 		},
 		files  : [
 			{
-				'<%= currentTarget %>/styles/vendor.css': '<%= currentTarget %>/styles/vendor.css'
+				'<%= currentTarget %>/styles/vendors.min.css': '<%= currentTarget %>/styles/vendors.min.css'
 			}
 		]
 	}

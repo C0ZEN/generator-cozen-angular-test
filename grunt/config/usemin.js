@@ -9,6 +9,6 @@
  */
 module.exports = {
 	html: [
-		'<%= currentTarget %>/index.html'
+		'<%= paths.app %>/config/tpls/vendors-generated.tpl.html'
 	]
 };

@@ -31,7 +31,10 @@ module.exports = {
 	js        : {
 		files: [
 			'<%= paths.app %>/**/*.js',
-			'Gruntfile.js'
+			'Gruntfile.js',
+			'!<%= paths.app %>/scripts/generator-cozen-angular-test.js',
+			'!<%= paths.app %>/scripts/generator-cozen-angular-test.min.js',
+			'!<%= paths.app %>/scripts/vendors.min.js'
 		],
 		tasks: [
 			'jsMin:dev',
