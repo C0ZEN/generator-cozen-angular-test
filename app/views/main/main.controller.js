@@ -3,9 +3,9 @@
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
- * Date: 31/01/2018
- * Time: 10:26
- * Version: 0.0.0
+ * Date: 03/02/2018
+ * Time: 16:21
+ * Version: 0.1.0
  *
  * @ngdoc controller
  * @name generatorCozenAngularTest.controller:mainController
@@ -20,16 +20,14 @@
 		.module('generatorCozenAngularTest')
 		.controller('mainController', mainController);
 
-	mainController.$inject = [
-	];
+	mainController.$inject = [];
 
 	function mainController() {
 		const vm = this;
 
 		vm.username = 'C0ZEN';
 
-		vm.methods = {
-		};
+		vm.methods = {};
 	}
 
 })(window.angular);

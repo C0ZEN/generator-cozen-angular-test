@@ -1,7 +1,7 @@
 html(
-ng-app="<%= appNameCamel %>"
+ng-app="generatorCozenAngularTest"
 ng-strict-di="true"
-lang="<%= lang %>")
+lang="fr")
 	head
 		base
 		meta(
@@ -17,7 +17,7 @@ lang="<%= lang %>")
 		href="manifest.json")
 		meta(
 		name="theme-color"
-		content="<%= themeColor %>")
+		content="#FFFFFF")
 		link(
 		rel="canonical"
 		href="<!-- @echo configJson.app.canonicalUrl -->")
@@ -25,33 +25,33 @@ lang="<%= lang %>")
 		property="og:url"
 		content="<!-- @echo configJson.app.canonicalUrl -->")
 		meta(property="og:title"
-		content="<%= appName %>")
+		content="Generator Cozen Angular Test")
 		meta(
 		name="author"
-		content="<%= authorShort %>")
+		content="Geoffrey Testelin")
 		meta(
 		property="og:locale"
-		content="<%= langExtended %>")
+		content="fr_FR")
 		meta(
 		name="description"
-		content="<%= appDescription %>")
+		content="This is the description for the project Generator Cozen Angular Test")
 		meta(
 		property="og:description"
-		content="<%= appDescription %>")
+		content="This is the description for the project Generator Cozen Angular Test")
 		meta(
 		property="og:site_name"
-		content="<%= appName %>")
-		<% if (twitterAdded) { %>
+		content="Generator Cozen Angular Test")
+		
 		meta(
 		name="twitter:card"
 		content="summary")
 		meta(
 		name="twitter:site"
-		content="@<%= twitterName %>")
+		content="@C0ZEN")
 		meta(
 		name="twitter:creator"
-		content="@<%= twitterName %>")
-		<% } %>
+		content="@C0ZEN")
+		
 		script(
 		type="application/ld+json"
 		src="structured-data.json")
@@ -69,7 +69,7 @@ lang="<%= lang %>")
 		rel="preload"
 		as="style"
 		onload="this.rel='stylesheet'"
-		href="styles/css/<%= appNameKebab %>.min.css")
+		href="styles/css/generator-cozen-angular-test.min.css")
 		<!-- @endif -->
 
 		<!-- @if target="test" -->
@@ -85,7 +85,7 @@ lang="<%= lang %>")
 		rel="preload"
 		as="style"
 		onload="this.rel='stylesheet'"
-		href="styles/<%= appNameKebab %>.min.css")
+		href="styles/generator-cozen-angular-test.min.css")
 		<!-- @endif -->
 
 		<!-- @if target="preprod" -->
@@ -101,7 +101,7 @@ lang="<%= lang %>")
 		rel="preload"
 		as="style"
 		onload="this.rel='stylesheet'"
-		href="styles/<%= appNameKebab %>.min.css")
+		href="styles/generator-cozen-angular-test.min.css")
 		<!-- @endif -->
 
 		<!-- @if target="prod" -->
@@ -117,7 +117,7 @@ lang="<%= lang %>")
 		rel="preload"
 		as="style"
 		onload="this.rel='stylesheet'"
-		href="styles/<%= appNameKebab %>.min.css")
+		href="styles/generator-cozen-angular-test.min.css")
 		<!-- @endif -->
 
 		<!-- Favicon -->
@@ -184,28 +184,28 @@ lang="<%= lang %>")
 	script(
 	type="text/javascript"
 	defer
-	src="scripts/<%= appNameKebab %>.min.js")
+	src="scripts/generator-cozen-angular-test.min.js")
 	<!-- @endif -->
 
 	<!-- @if target="test" -->
 	script(
 	type="text/javascript"
 	defer
-	src="scripts/<%= appNameKebab %>.min.js")
+	src="scripts/generator-cozen-angular-test.min.js")
 	<!-- @endif -->
 
 	<!-- @if target="preprod" -->
 	script(
 	type="text/javascript"
 	defer
-	src="scripts/<%= appNameKebab %>.min.js")
+	src="scripts/generator-cozen-angular-test.min.js")
 	<!-- @endif -->
 
 	<!-- @if target="prod" -->
 	script(
 	type="text/javascript"
 	defer
-	src="scripts/<%= appNameKebab %>.min.js")
+	src="scripts/generator-cozen-angular-test.min.js")
 	<!-- @endif -->
 
 	<!-- No script message -->

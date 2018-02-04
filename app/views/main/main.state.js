@@ -3,9 +3,9 @@
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
- * Date: 31/01/2018
- * Time: 10:26
- * Version: 0.0.0
+ * Date: 03/02/2018
+ * Time: 16:21
+ * Version: 0.1.0
  */
 (function (angular) {
 	'use strict';
@@ -21,10 +21,11 @@
 	function mainState($stateProvider) {
 		$stateProvider
 			.state('main', {
-
-				url        : '/main',
-				templateUrl: 'views/mainDirectory/mainDirectory.template.html',
-
+			    
+			    
+                url         : '/main',
+				templateUrl : 'views/main/main.template.html',
+				
 				controller  : 'mainController',
 				controllerAs: 'vm'
 			});

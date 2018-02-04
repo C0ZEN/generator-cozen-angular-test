@@ -4,7 +4,7 @@
  *
  * Created by: Geoffrey Testelin
  * Date: 03/02/2018
- * Time: 15:49
+ * Time: 16:15
  * Version: 0.0.0
  */
 /* eslint key-spacing:"off" */
@@ -52,20 +52,6 @@ module.exports = {
 			'notify:less'
 		]
 	},
-	html      : {
-		files: [
-			'<%= paths.app %>/**/*.html',
-			'!<%= paths.app %>/index.html'
-		],
-		tasks: [
-			'wiredep',
-			'preprocess:dev',
-			'string-replace:devIndex',
-			'htmlmin:dev',
-			'jsMin:dev',
-			'notify:buildReady'
-		]
-	},
 	pug       : {
 		files: [
 			'<%= paths.app %>/**/*.pug'
@@ -81,7 +67,8 @@ module.exports = {
 		files  : [
 			'<%= paths.app %>/scripts/generator-cozen-angular-test.min.js',
 			'<%= paths.app %>/styles/css/*.css',
-			'<%= paths.app %>/images/**/*.{png,jpg,jpeg,gif,webp,svg,ico}'
+			'<%= paths.app %>/images/**/*.{png,jpg,jpeg,gif,webp,svg,ico}',
+			'<%= paths.app %>/**/*.html'
 		]
 	}
 };

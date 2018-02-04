@@ -3,13 +3,13 @@
  * Created with: generator-cozen-angular
  *
  * Created by: Geoffrey Testelin
- * Date: 31/01/2018
- * Time: 10:26
- * Version: 0.0.0
+ * Date: 03/02/2018
+ * Time: 16:21
+ * Version: 0.1.0
  *
  * @ngdoc service
  * @name generatorCozenAngularTest.mainService
- *
+ * 
  * @description
  *
  */
@@ -21,10 +21,11 @@
 		.factory('mainService', mainService);
 
 	mainService.$inject = [
+	    
 	];
 
-	function mainService() {
-		return {
+	function mainService() {return {
+		    
 		};
 	}
 
